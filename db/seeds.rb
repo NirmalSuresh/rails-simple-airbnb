@@ -7,3 +7,29 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+# db/seeds.rb
+Flat.destroy_all
+
+Flat.create!(
+  name: 'Light & Spacious Garden Flat London',
+  address: '10 Clifton Gardens London W9 1DT',
+  description: 'A lovely summer feel for this spacious garden flat...',
+  price_per_night: 75,
+  number_of_guests: 3
+)
+
+Flat.create!(
+  name: 'Goodrej Flat London',
+  address: 'Main London',
+  description: 'A lovely summer feel for this spacious garden flat...',
+  price_per_night: 15,
+  number_of_guests: 3
+)
+
+Flat.create!(
+  name: 'Heaven Flat London',
+  address: 'Downtown London',
+  description: 'A lovely summer feel for this spacious garden flat...',
+  price_per_night: 105,
+  number_of_guests: 3
+)
